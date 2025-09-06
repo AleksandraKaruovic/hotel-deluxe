@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hotel deLuxe - Galerija</title>
+    <meta name="opis" content="Pogledajte galeriju hotela deLuxe. Uživajte u fotografijama soba, restorana, spa centra i nezaboravnih trenutaka koje nudimo našim gostima.">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="galerija.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="zaglavlje">
+        <div class="omotac">
+            <a href="#" class="znak"><img src="images/logo.png" alt="logo"></a>
+            <nav class="navigacija">
+                <ul class="navigacija-lista">
+                    <li class="navigacija-stavka"><a class="navigacija-link" href="rezervacija.html">Rezervacija</a></li>
+                    <li class="navigacija-stavka"><a class="navigacija-link" href="index.html">Početna</a></li>
+                    <li class="navigacija-stavka"><a class="navigacija-link" href="onama.html">O nama</a></li>
+                    <li class="navigacija-stavka"><a class="navigacija-link navigacija-link-aktivno" href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="baner" style="background-image: url('images/banner4.jpg');">
+        <div class="baner-drzac">
+            <span class="baner-tekst">Galerija</span>
+            <h1 class="baner-naslov"><span> Hotel deLuxe</span></h1>
+        </div>
+    </div>
+
+    <div class="mreza-kartica">
+        <div class="kartica">
+            <img src="https://www.garrisoncollection.com/wordpress/wp-content/uploads/2015/07/Lyon-FC-Hotel-Maya-9-1600x1066.jpg" alt="Dvokrevetna soba Sea View">
+            <h3>Dvokrevetna soba Sea View</h3>
+            <p>Moderno uređena hotelska soba u toplim tonovima ...</p>
+            <button class="dugme" data-soba="1">Prikaži detalje</button>
+        </div>
+
+        <div class="kartica">
+            <img src="https://theclifflipe.com/wp-content/uploads/2020/04/Grand-Deluxe-Garden-View-1.jpeg" alt="Dvokrevetna soba Garden View">
+            <h3>Dvokrevetna soba Garden View</h3>
+            <p>Prostrana, svetla, dvokrevetna hotelska soba ...</p>
+            <button class="dugme" data-soba="2">Prikaži detalje</button>
+        </div>
+
+        <div class="kartica">
+            <img src="https://www.hotelsidari.com/app/uploads/sites/96/2019/01/7-1920x1280.jpg" alt="Trokrevetna soba Side View">
+            <h3>Trokrevetna soba Side View</h3>
+            <p>Ova hotelska soba je prostrana i luksuzna ...</p>
+            <button class="dugme" data-soba="3">Prikaži detalje</button>
+        </div>
+
+        <div class="kartica">
+            <img src="https://www.garrisoncollection.com/wordpress/wp-content/uploads/2015/07/Lyon-FC-Hotel-Maya-7-1600x1066.jpg" alt="Trokrevetna soba Garden View">
+            <h3>Trokrevetna soba Garden View</h3>
+            <p>Luksuzna dvokrevetna hotelska soba sa toplim ...</p>
+            <button class="dugme" data-soba="4">Prikaži detalje</button>
+        </div>
+
+        <div class="kartica">
+            <img src="https://www.kayahotels.com/Uploads/144810.5v9er.webp" alt="Četvorokrevetna soba Sea View">
+            <h3>Četvorokrevetna soba Sea View</h3>
+            <p>Sofisticirana i moderna hotelska soba ...</p>
+            <button class="dugme" data-soba="5">Prikaži detalje</button>
+        </div>
+
+        <div class="kartica">
+            <img src="https://conradwashingtondc.com/wp-content/uploads/2019/03/WASCI_DeluxeQueen_Out_wide-1600x1066.jpg" alt="Četvorokrevetna soba Garden View">
+            <h3>Četvorokrevetna soba Garden View</h3>
+            <p>Luksuzna hotelska soba u modernom stilu ...</p>
+            <button class="dugme" data-soba="6">Prikaži detalje</button>
+        </div>
+    </div>
+
+    <!-- Svetlosni prozor -->
+    <div class="svetlosni-prozor">
+        <div class="svetlosni-sadrzaj">
+            <div class="svetlosne-slike"></div>
+            <button class="prethodno-dugme">←</button>
+            <button class="sledece-dugme">→</button>
+            <button class="zatvori-dugme">x</button>
+        </div>
+    </div>
+
+    <footer class="futer">
+        <div class="omotac">
+            <div class="futer-sadrzaj">
+                <div class="futer-drzac">
+                    <ul class="futer-navigacija">
+                        <li class="futer-navigacija-stavka"><span class="futer-navigacija-link">Pratite nas na društvenim mrežama</span></li>
+                    </ul>
+                     <ul class="futer-drustvene">
+                    <li class="futer-drustvene-stavka"><a class="futer-drustvene-link" href="https://www.instagram.com/"><svg height="511pt" viewBox="0 0 511 511.9" width="511pt" xmlns="http://www.w3.org/2000/svg"><path d="m510.949219 150.5c-1.199219-27.199219-5.597657-45.898438-11.898438-62.101562-6.5-17.199219-16.5-32.597657-29.601562-45.398438-12.800781-13-28.300781-23.101562-45.300781-29.5-16.296876-6.300781-34.898438-10.699219-62.097657-11.898438-27.402343-1.300781-36.101562-1.601562-105.601562-1.601562s-78.199219.300781-105.5 1.5c-27.199219 1.199219-45.898438 5.601562-62.097657 11.898438-17.203124 6.5-32.601562 16.5-45.402343 29.601562-13 12.800781-23.097657 28.300781-29.5 45.300781-6.300781 16.300781-10.699219 34.898438-11.898438 62.097657-1.300781 27.402343-1.601562 36.101562-1.601562 105.601562s.300781 78.199219 1.5 105.5c1.199219 27.199219 5.601562 45.898438 11.902343 62.101562 6.5 17.199219 16.597657 32.597657 29.597657 45.398438 12.800781 13 28.300781 23.101562 45.300781 29.5 16.300781 6.300781 34.898438 10.699219 62.101562 11.898438 27.296876 1.203124 36 1.5 105.5 1.5s78.199219-.296876 105.5-1.5c27.199219-1.199219 45.898438-5.597657 62.097657-11.898438 34.402343-13.300781 61.601562-40.5 74.902343-74.898438 6.296876-16.300781 10.699219-34.902343 11.898438-62.101562 1.199219-27.300781 1.5-36 1.5-105.5s-.101562-78.199219-1.300781-105.5zm-46.097657 209c-1.101562 25-5.300781 38.5-8.800781 47.5-8.601562 22.300781-26.300781 40-48.601562 48.601562-9 3.5-22.597657 7.699219-47.5 8.796876-27 1.203124-35.097657 1.5-103.398438 1.5s-76.5-.296876-103.402343-1.5c-25-1.097657-38.5-5.296876-47.5-8.796876-11.097657-4.101562-21.199219-10.601562-29.398438-19.101562-8.5-8.300781-15-18.300781-19.101562-29.398438-3.5-9-7.699219-22.601562-8.796876-47.5-1.203124-27-1.5-35.101562-1.5-103.402343s.296876-76.5 1.5-103.398438c1.097657-25 5.296876-38.5 8.796876-47.5 4.101562-11.101562 10.601562-21.199219 19.203124-29.402343 8.296876-8.5 18.296876-15 29.398438-19.097657 9-3.5 22.601562-7.699219 47.5-8.800781 27-1.199219 35.101562-1.5 103.398438-1.5 68.402343 0 76.5.300781 103.402343 1.5 25 1.101562 38.5 5.300781 47.5 8.800781 11.097657 4.097657 21.199219 10.597657 29.398438 19.097657 8.5 8.300781 15 18.300781 19.101562 29.402343 3.5 9 7.699219 22.597657 8.800781 47.5 1.199219 27 1.5 35.097657 1.5 103.398438s-.300781 76.300781-1.5 103.300781zm0 0"/><path d="m256.449219 124.5c-72.597657 0-131.5 58.898438-131.5 131.5s58.902343 131.5 131.5 131.5c72.601562 0 131.5-58.898438 131.5-131.5s-58.898438-131.5-131.5-131.5zm0 216.800781c-47.097657 0-85.300781-38.199219-85.300781-85.300781s38.203124-85.300781 85.300781-85.300781c47.101562 0 85.300781 38.199219 85.300781 85.300781s-38.199219 85.300781-85.300781 85.300781zm0 0"/><path d="m423.851562 119.300781c0 16.953125-13.746093 30.699219-30.703124 30.699219-16.953126 0-30.699219-13.746094-30.699219-30.699219 0-16.957031 13.746093-30.699219 30.699219-30.699219 16.957031 0 30.703124 13.742188 30.703124 30.699219zm0 0"/></svg></a></li>
+                    <li class="futer-drustvene-stavka"><a class="futer-drustvene-link" href="https://www.facebook.com/"><svg viewBox="-110 1 511 511.99996" xmlns="http://www.w3.org/2000/svg"><path d="m180 512h-81.992188c-13.695312 0-24.835937-11.140625-24.835937-24.835938v-184.9375h-47.835937c-13.695313 0-24.835938-11.144531-24.835938-24.835937v-79.246094c0-13.695312 11.140625-24.835937 24.835938-24.835937h47.835937v-39.683594c0-39.347656 12.355469-72.824219 35.726563-96.804688 23.476562-24.089843 56.285156-36.820312 94.878906-36.820312l62.53125.101562c13.671875.023438 24.792968 11.164063 24.792968 24.835938v73.578125c0 13.695313-11.136718 24.835937-24.828124 24.835937l-42.101563.015626c-12.839844 0-16.109375 2.574218-16.808594 3.363281-1.152343 1.308593-2.523437 5.007812-2.523437 15.222656v31.351563h58.269531c4.386719 0 8.636719 1.082031 12.289063 3.121093 7.878906 4.402344 12.777343 12.726563 12.777343 21.722657l-.03125 79.246093c0 13.6875-11.140625 24.828125-24.835937 24.828125h-58.46875v184.941406c0 13.695313-11.144532 24.835938-24.839844 24.835938zm-76.8125-30.015625h71.632812v-193.195313c0-9.144531 7.441407-16.582031 16.582032-16.582031h66.726562l.027344-68.882812h-66.757812c-9.140626 0-16.578126-7.4375-16.578126-16.582031v-44.789063c0-11.726563 1.191407-25.0625 10.042969-35.085937 10.695313-12.117188 27.550781-13.515626 39.300781-13.515626l36.921876-.015624v-63.226563l-57.332032-.09375c-62.023437 0-100.566406 39.703125-100.566406 103.609375v53.117188c0 9.140624-7.4375 16.582031-16.578125 16.582031h-56.09375v68.882812h56.09375c9.140625 0 16.578125 7.4375 16.578125 16.582031zm163.0625-451.867187h.003906zm0 0"/></svg></a></li>
+                    <li class="futer-drustvene-stavka"><a class="futer-drustvene-link" href="https://twitter.com/"><?xml version="1.0" encoding="iso-8859-1"?> <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --> <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"> <g> <g> <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016 c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992 c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056 c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152 c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792 c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44 C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568 C480.224,136.96,497.728,118.496,512,97.248z"/> </g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg> </a></li>
+                    <li class="futer-drustvene-stavka"><a class="futer-drustvene-link" href="https://www.pinterest.com/"><svg id="Bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m12.326 0c-6.579.001-10.076 4.216-10.076 8.812 0 2.131 1.191 4.79 3.098 5.633.544.245.472-.054.94-1.844.037-.149.018-.278-.102-.417-2.726-3.153-.532-9.635 5.751-9.635 9.093 0 7.394 12.582 1.582 12.582-1.498 0-2.614-1.176-2.261-2.631.428-1.733 1.266-3.596 1.266-4.845 0-3.148-4.69-2.681-4.69 1.49 0 1.289.456 2.159.456 2.159s-1.509 6.096-1.789 7.235c-.474 1.928.064 5.049.111 5.318.029.148.195.195.288.073.149-.195 1.973-2.797 2.484-4.678.186-.685.949-3.465.949-3.465.503.908 1.953 1.668 3.498 1.668 4.596 0 7.918-4.04 7.918-9.053-.016-4.806-4.129-8.402-9.423-8.402z"/></svg></a></li>
+                    <li class="futer-drustvene-stavka"><a class="futer-drustvene-link" href="https://www.google.com/gmail/"><?xml version="1.0" encoding="iso-8859-1"?> <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --> <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"> <g> <g> <path d="M467,61H45C20.218,61,0,81.196,0,106v300c0,24.72,20.128,45,45,45h422c24.72,0,45-20.128,45-45V106 C512,81.28,491.872,61,467,61z M460.786,91L256.954,294.833L51.359,91H460.786z M30,399.788V112.069l144.479,143.24L30,399.788z M51.213,421l144.57-144.57l50.657,50.222c5.864,5.814,15.327,5.795,21.167-0.046L317,277.213L460.787,421H51.213z M482,399.787 L338.213,256L482,112.212V399.787z"/> </g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg> </a></li>
+                </ul>
+                    <a class="futer-znak" href="kontakt.html">
+                        <img class="futer-znak-slika" src="images/footer2.png" alt="footer logo">
+                    </a>
+                    <span class="futer-autorska">2025 AK 23, Sva prava zadržana</span>
+                    <ul class="futer-lista">
+                        <li class="futer-lista-stavka"><a class="futer-lista-link" href="#">Uslovi korišćenja</a></li>
+                        <li class="futer-lista-stavka"><a class="futer-lista-link" href="#">Politika privatnosti</a></li>
+                        <li class="futer-lista-stavka"><a class="futer-lista-link" href="#">Politika kolačića</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/galerija.js"></script>
+</body>
+</html>
