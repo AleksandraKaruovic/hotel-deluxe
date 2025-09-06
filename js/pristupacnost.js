@@ -27,12 +27,11 @@ function PromenaTeme() {
 }
 
 /*  SKALIRANJE FONTA */
-// Ako već imaš ove promenljive/funkcije, zadrži ih – samo dodaj čuvanje/čitanje kolačića
 
 // Globalni faktor (1 = 100%)
 let faktorSkaliranja = 1;
 
-// Prvi put zapamti bazne veličine pa skaluje (radi i kad su fontovi u px)
+// Prvi put zapamti bazne veličine pa skaluje
 function zapamtiBazneVelicine() {
   const elementi = document.querySelectorAll('body *:not(script):not(style)');
   elementi.forEach(el => {
@@ -89,3 +88,4 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   primeniSkaliranje();
 });
+
