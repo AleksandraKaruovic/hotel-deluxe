@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Slike za karticu Restoran
   const restoranSlike = [
     "https://toohotel.com/wp-content/uploads/2022/09/TOO_restaurant_Panoramique_vue_Paris_Seine_Tour_Eiffel_2.jpg",
-    "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Restaurant_N%C3%A4sinneula.jpg/1200px-Restaurant_N%C3%A4sinneula.jpg",
     "https://toohotel.com/wp-content/uploads/2022/09/TOO_restaurant_Panoramique_vue_Paris_nuit_v2-scaled.jpg",
   ];
   let trenutniIndeksSlike = 0;
@@ -136,3 +136,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
