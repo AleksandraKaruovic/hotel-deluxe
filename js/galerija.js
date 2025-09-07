@@ -21,14 +21,14 @@ const slikeSoba = {
     "https://www.garrisoncollection.com/wordpress/wp-content/uploads/2015/07/Lyon-FC-Hotel-Maya-4-1600x1066.jpg"
   ],
   "5": [
-    "https://theclifflipe.com/wp-content/uploads/2020/04/Grand-Deluxe-Garden-View-1.jpeg",
-    "https://theclifflipe.com/wp-content/uploads/2020/04/Grand-Deluxe-Garden-View-2.jpeg",
-    "https://theclifflipe.com/wp-content/uploads/2020/04/Grand-Deluxe-Garden-View-3.jpeg"
-  ],
-  "6": [
     "https://www.hotelsidari.com/app/uploads/sites/96/2019/01/7-1920x1280.jpg",
     "https://www.hotelsidari.com/app/uploads/sites/96/2019/01/8-1920x1280.jpg",
     "https://www.hotelsidari.com/app/uploads/sites/96/2019/01/5-1920x1280.jpg"
+  ],
+  "6": [
+    "https://theclifflipe.com/wp-content/uploads/2020/04/Grand-Deluxe-Garden-View-1.jpeg",
+    "https://theclifflipe.com/wp-content/uploads/2020/04/Grand-Deluxe-Garden-View-2.jpeg",
+    "https://theclifflipe.com/wp-content/uploads/2020/04/Grand-Deluxe-Garden-View-3.jpeg"
   ]
 };
 
@@ -80,4 +80,5 @@ document.querySelectorAll('.dugme').forEach(dugme => {
 document.querySelector('.zatvori-dugme').addEventListener('click', function() {
   document.querySelector('.svetlosni-prozor').style.display = 'none';
 });
+
 
