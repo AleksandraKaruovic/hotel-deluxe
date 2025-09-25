@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel deLuxe - Rezervacija</title>
+    <meta name="opis" content="Rezervišite svoj boravak u Hotelu deLuxe. Izaberite tip sobe, datume boravka i dodatne usluge – jednostavno i brzo putem naše online forme.">
+    <link rel="icon" type="image/png" href="slike/logo.png">
+    <link rel="stylesheet" href="rezervacija.css">
+</head>
+<body>
+    <div class="pozadina" style="background-image: url('slike/rezervacija.jpeg');">
+        <div class="forma-kontejner">
+            <h1 style="font-family: Brush Script MT, cursive;">Hotel deLuxe</h1>
+            <form id="forma-rezervacija" novalidate>
+                <h2>Rezervacija</h2>
+
+                <label for="ime">Ime *</label>
+                <input type="text" id="ime" name="ime" required minlength="2" maxlength="30" pattern="^[A-ZČĆŽŠĐ][a-zčćžšđ]{1,29}$">
+
+                <label for="prezime">Prezime *</label>
+                <input type="text" id="prezime" name="prezime" required minlength="2" maxlength="30" pattern="^[A-ZČĆŽŠĐ][a-zčćžšđ]{1,29}$">
+
+                <label for="adresa1">Adresa *</label>
+                <input type="text" id="adresa1" name="adresa1" required>
+
+                <label for="grad">Grad *</label>
+                <input type="text" id="grad" name="grad" required>
+
+                <label for="drzava">Država *</label>
+                <input type="text" id="drzava" name="drzava" required>
+
+                <label for="postanski-broj">Poštanski broj *</label>
+                <input type="text" id="postanski-broj" name="postanski-broj" required>
+
+                <label for="broj-pasosa">Broj pasoša *</label>
+                <input type="text" id="broj-pasosa" name="broj-pasosa" required>
+
+                <label for="telefon">Telefon *</label>
+                <input type="tel" id="telefon" name="telefon" required pattern="^\+?\d{9,12}$">
+
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="datum-prijave">Datum prijave *</label>
+                <input type="date" id="datum-prijave" name="datum-prijave" required>
+
+                <label for="vreme-prijave">Vreme prijave </label>
+                <input type="time" id="vreme-prijave" name="vreme-prijave">
+
+                <label for="datum-odjave">Datum odjave *</label>
+                <input type="date" id="datum-odjave" name="datum-odjave" required>
+
+                <label for="tip-sobe">Tip sobe *</label>
+                <label><input type="radio" name="tip-sobe" value="dvokrevetna" required> Dvokrevetna</label>
+                <label><input type="radio" name="tip-sobe" value="trokrevetna"> Trokrevetna</label>
+                <label><input type="radio" name="tip-sobe" value="cetvorokrevetna"> Četvorokrevetna</label>
+                
+                <label for="tip-kreveta">Tip kreveta *</label>
+                <label><input type="radio" name="tip-kreveta" value="single" required> Single krevet</label>
+                <label><input type="radio" name="tip-kreveta" value="double"> Double krevet</label>
+
+                <label for="odrasli">Odrasli</label>
+                <select id="odrasli" name="odrasli" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+
+                <label for="deca">Deca</label>
+                <select id="deca" name="deca">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+
+                <label for="pogled-sobe">Pogled *</label>
+                <select id="pogled-sobe" name="pogled-sobe" required>
+                    <option value="more">Pogled na more</option>
+                    <option value="delimično-more">Delimičan pogled na more</option>
+                    <option value="dvorište">Pogled na vrt</option>
+                </select>
+
+                <label for="dodatni-lezaj">Dodatni ležaj za decu</label>
+                <select id="dodatni-lezaj" name="dodatni-lezaj">
+                    <option value="ne">Ne</option>
+                    <option value="da">Da</option>
+                </select>
+
+                <label for="napomene">Napomene</label>
+                <textarea id="napomene" name="napomene"></textarea>
+
+                <label for="ukupna-cena">Ukupna cena: </label>
+                <div id="ukupna-cena" style="font-size: 20px">0 €</div>
+
+                <button type="submit">Rezerviši</button>
+            </form>
+            <div id="poruke-greske" role="alert" aria-live="polite"></div>
+        </div>
+    </div>
+    <script src="js/rezervacija.js"></script>
+    <script src="js/validacija.js" defer></script>
+</body>
+</html>
+
