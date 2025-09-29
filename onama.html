@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel deLuxe - O nama</title>
+    <meta name="opis" content="Saznajte više o Hotelu deLuxe. Naša tradicija luksuza, profesionalna usluga i posvećenost udobnosti čine nas pravim izborom za vaš odmor.">
+    <link rel="icon" type="image/png" href="slike/logo.png">
+    <link rel="stylesheet" href="onama.css">
+</head>
+<body>
+    <header class="zaglavlje">
+        <div class="omotac">
+            <a href="pocetna.html" class="znak"><img src="slike/logo.png" alt="logo"></a>
+            <nav class="navigacija">
+                <ul class="navigacija-lista">
+                    <li class="navigacija-stavka"><a class="navigacija-link" href="pocetna.html">Početna</a></li>
+                    <li class="navigacija-stavka"><a class="navigacija-link" href="rezervacija.html">Rezervacija</a></li>
+                    <li class="navigacija-stavka"><a class="navigacija-link" href="galerija.html">Galerija</a></li>
+                    <li class="navigacija-stavka padajuci">
+                        <button id="btnUsluge" class="navigacija-link navigacija-dugme" type="button" aria-haspopup="true" aria-expanded="false">
+                        Usluge
+                        </button>
+                        <div class="sadrzaj" id="sadrzajUsluge" role="menu">
+                        <a role="menuitem" class="navigacija-link" href="onama.html">O nama</a>
+                        <a role="menuitem" class="navigacija-link" href="kontakt.html">Kontakt</a>
+                        </div>
+                        </li>
+
+                    <li class="navigacija-stavka">
+                    <button onclick="povecajFont()" class="navigacija-link navigacija-dugme">A+</button>
+                    </li>
+                    <li class="navigacija-stavka">
+                    <button onclick="smanjiFont()" class="navigacija-link navigacija-dugme">A-</button>
+                    </li>
+                    <li class="navigacija-stavka">
+                    <button onclick="PromenaTeme()" class="navigacija-link navigacija-dugme">Tema</button>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="baner" style="background-image: url('slike/baner3.jpg');">
+        <div class="baner-drzac">
+            <span class="baner-tekst">O nama</span>
+            <h1 class="baner-naslov"><span> Hotel deLuxe</span></h1>
+        </div>
+    </div>
+
+    <section class="stavke">
+      <div class="omotac">
+          <div class="stavke-kontejner">
+              <div class="stavka">
+            <div class="stavka-ikona">
+                <img src="slike/wifi.svg" class="stavka-ikonica" alt="Wi-Fi">
+            </div>
+            <div class="stavka-sadrzaj">
+                <span class="stavka-broj">Besplatan</span>
+                <span class="stavka-naslov">WiFi</span>
+            </div>
+            </div>
+
+            <div class="stavka">
+            <div class="stavka-ikona">
+                <img src="slike/parking.svg" class="stavka-ikonica" alt="Parking">
+            </div>
+            <div class="stavka-sadrzaj">
+                <span class="stavka-broj">Besplatan</span>
+                <span class="stavka-naslov">parking</span>
+            </div>
+            </div>
+
+            <div class="stavka">
+            <div class="stavka-ikona">
+                <img src="slike/spa.svg" class="stavka-ikonica" alt="SPA centar">
+            </div>
+            <div class="stavka-sadrzaj">
+                <span class="stavka-broj">SPA</span>
+                <span class="stavka-naslov">centar</span>
+            </div>
+            </div>
+
+            <div class="stavka">
+            <div class="stavka-ikona">
+                <img src="slike/restoran.svg" class="stavka-ikonica" alt="Restoran i bar">
+            </div>
+            <div class="stavka-sadrzaj">
+                <span class="stavka-broj">Restoran</span>
+                <span class="stavka-naslov">i bar</span>
+            </div>
+            </div>
+
+          </div>
+      </div>
+  </section>
+
+    <section class="onama">
+        <div class="omotac">
+            <div class="onama-kontejner">
+                <div class="onama-stavka">
+                    <div class="onama-drzac">
+                        <h3 class="onama-naslov">O nama</h3>
+                        <p class="onama-tekst">Hotel deLuxe svojom osobenošću, rafiniranim stilom i poslovnim šarmom, ide u korak sa potrebama sadašnjeg vremena, savremenog poslovanja i kvaliteta turističkih usluga. Nalazi se u Australiji, Sidneju, na pogodnoj lokaciji pored plaže, nedaleko od najvažnijih atrakcija.</p>
+                        <p class="onama-tekst">Sobe i aparmani pružaju osećaj gostoljubive atmosfere. Enterijeri odgovaraju najvišim standardima sa akcentom na funkcionalnost i udobnost. Dostupne su dvokrevetne, trokrevetne i četvorokrevetne sobe i apartmani.</p>
+                        <p class="onama-tekst">U sklopu objekta nalazi se i eskluzivni restoran sa balkonom koji omogućava gostima prijatan i kvalitetan servis jela i pića, kao i uslugu pansionske ishrane nacionalne kuhinje. Za organizaciju seminara, promocija, edukacija, rođendana, venčanja i slično, hotel raspolaže sa salom kapaciteta do 200 mesta. Sala je kompletno opremljena za potrebe sastanaka (projektor, platno, ozvučenje). Za goste hotela, iznajmljivanje sale je besplatno.</p>
+                        <img class="onama-slika" src="slike/onamaslika.jpg" alt="sign">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <h2 class="onama-kartica-sadrzaj">Dodatne usluge</h2>
+
+    <section>
+      <div class="kartice" id="kartice">
+      <article class="kartica">
+        <header>
+            <h2>Bazen</h2>
+        </header>
+        <img src="slike/bazen.jfif" alt="bazen">
+        <div class="sadrzaj">
+            <li class="kartica-tekst">Centralni unutrašnji bazen sa brzom rekom, masažerima i vodenim mlaznicama;</li>
+            <li class="kartica-tekst">Unutrašnje-spoljašnji bazen za isplivavanje;</li>
+            <li class="kartica-tekst">Veliki otvoreni bazen sa pogledom na plažu;</li>
+            <li class="kartica-tekst">Dečji bazen dubine 30 cm;</li>
+            <li class="kartica-tekst">Dečji bazen sa pećinom i toboganom, dubine 50-80 cm.</li>
+        </div>
+      </article>
+
+      <article class="kartica">
+        <header>
+            <h2>Spa</h2>
+        </header>
+        <img src="slike/sauna.jpg" alt="sauna">
+        <div class="sadrzaj">
+          <li class="kartica-tekst">Hidromasažni bazen–kupanje u vodi od 30 stepeni</li>
+          <li class="kartica-tekst">Finska sauna–od 70 do 90 stepeni;</li>
+          <li class="kartica-tekst">Ruska sauna–od 90 do 110 stepeni;</li>
+          <li class="kartica-tekst">Topla klupa–temperatura od 37 stepeni;</li>
+          <li class="kartica-tekst">Tepidarium–ležaljke koje se zagrevaju od 37 do 39 stepeni.</li>
+        </div>
+    </article>
+
+    <article class="kartica">
+      <header>
+          <h2>Masaže</h2>
+      </header>
+      <img src="slike/masaza.jpg" alt="masaza">
+      <div class="sadrzaj">
+        <li class="kartica-tekst">Relax masaža-služi za prevenciju stresa i premora;</li>
+        <li class="kartica-tekst">Anticelulit masaža-izvodi se pritiskom na određene tačke;</li>
+        <li class="kartica-tekst">Masaža vulkanskim kamenjem-opušta napete mišiće;</li>
+        <li class="kartica-tekst">Sportska masaža-preporučuje se svima čije je telo izloženo većim naporima;</li>
+        <li class="kartica-tekst">Terapeutska masaža-obogaćena je mešavinom esencijalnih ulja, otklanjaja napetost.</li>
+      </div>
+    </article>
+
+  <article class="kartica">
+    <header>
+        <h2>Teretana</h2>
+    </header>
+    <img src="slike/teretana.jpg" alt="teretana">
+    <div class="sadrzaj">
+      <p class="kartica-tekst">Hotelska teretana je moderno opremeljeni vežbališni prostor sa više od 30 sprava uz mogućnost vežbanja sa kvalifikovanim instruktorima koji su obučeni za fitness, pilates i korektivnu gimnastiku.</p>
+    </div>
+</article>
+</div>
+  </section>
+
+<footer class="futer">
+        <div class="omotac">
+            <div class="futer-sadrzaj">
+                <h4 class="futer-naslov">Prijavite se na Newsletter listu</h4>
+                <p class="futer-tekst">Prijavljivanjem na Newsletter listu, saznaćetete najnovije aktivnosti, promocije i druge novosti deLuxe hotela</p>
+            </div>
+            <form action="#" class="futer-forma">
+                <div class="futer-unos-omotac">
+                    <input class="futer-unos" type="text" placeholder="Ime">
+                </div>
+                <div class="futer-unos-omotac">
+                    <input class="futer-unos" type="text" placeholder="Prezime">
+                </div>
+                <div class="futer-unos-omotac">
+                    <input class="futer-unos" type="text" placeholder="Email">
+                </div>
+                <div class="futer-unos-omotac">
+                    <button class="futer-dugme" type="button">Prijava</button>
+                </div>
+            </form>
+            <div class="futer-drzac">
+                <ul class="futer-navigacija">
+                    
+                    <li class="futer-navigacija-stavka"><span class="futer-navigacija-link">Pratite nas na društvenim mrežama</span></li>
+                    
+                <ul class="futer-drustvene">
+        <li class="futer-drustvene-stavka">
+          <a href="https://www.instagram.com/">
+            <img class="futer-ikonica" src="slike/instagram.svg" alt="Instagram">
+          </a>
+        </li>
+        <li class="futer-drustvene-stavka">
+          <a href="https://www.facebook.com/">
+            <img class="futer-ikonica" src="slike/facebook.svg" alt="Facebook">
+          </a>
+        </li>
+        <li class="futer-drustvene-stavka">
+          <a href="https://twitter.com/">
+            <img class="futer-ikonica" src="slike/twitter.svg" alt="Twitter/X">
+          </a>
+        </li>
+        <li class="futer-drustvene-stavka">
+          <a href="https://www.pinterest.com/">
+            <img class="futer-ikonica" src="slike/pinterest.svg" alt="Pinterest">
+          </a>
+        </li>
+        <li class="futer-drustvene-stavka">
+          <a href="https://mail.google.com/mail/">
+            <img class="futer-ikonica" src="slike/mail.svg" alt="Email">
+          </a>
+        </li>
+      </ul>
+            <a class="futer-znak" href="aboutus.html">
+                <img class= "futer-znak-slika" src="slike/futer2.png" alt="img footer">
+            </a>
+            <span class="futer-autorska">2025 AK 23, Sva prava zadržana</span>
+                <ul class="futer-lista">
+                    <li class="futer-lista-stavka"><a class="futer-lista-link" href="https://policies.google.com/terms?hl=en-US">Uslovi korišćenja</a></li>
+                    <li class="futer-lista-stavka"><a class="futer-lista-link" href="https://policies.google.com/privacy?hl=en-US">Politika privatnosti</a></li>
+                    <li class="futer-lista-stavka"><a class="futer-lista-link" href="https://policies.google.com/technologies/cookies?hl=en-US">Politika kolačića</a></li>
+                </ul>
+        </div>
+    </div>
+</footer>
+  <!-- scripte -->
+  <script src="js/pristupacnost.js" defer></script>
+  <script src="js/meni.js" defer></script>
+</body>
+</html>
+
+

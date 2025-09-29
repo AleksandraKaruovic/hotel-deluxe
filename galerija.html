@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hotel deLuxe - Galerija</title>
+    <meta name="opis" content="Pogledajte galeriju hotela deLuxe. Uživajte u fotografijama soba, restorana, spa centra i nezaboravnih trenutaka koje nudimo našim gostima.">
+    <link rel="icon" type="image/png" href="slike/logo.png">
+    <link rel="stylesheet" href="galerija.css">
+    
+</head>
+<body>
+    <header class="zaglavlje">
+        <div class="omotac">
+            <a href="#" class="znak"><img src="slike/logo.png" alt="logo"></a>
+            <nav class="navigacija">
+                <ul class="navigacija-lista">
+                    <li class="navigacija-stavka"><a class="navigacija-link" href="pocetna.html">Početna</a></li>
+                    <li class="navigacija-stavka"><a class="navigacija-link" href="rezervacija.html">Rezervacija</a></li>
+                    <li class="navigacija-stavka"><a class="navigacija-link" href="galerija.html">Galerija</a></li>
+                    <li class="navigacija-stavka padajuci">
+                    <button id="btnUsluge" class="navigacija-link navigacija-dugme"
+                            type="button" aria-haspopup="true" aria-expanded="false">
+                        Usluge
+                    </button>
+                    <div class="sadrzaj" id="sadrzajUsluge" role="menu">
+                        <a role="menuitem" class="navigacija-link" href="onama.html">O nama</a>
+                        <a role="menuitem" class="navigacija-link" href="kontakt.html">Kontakt</a>
+                    </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="baner" style="background-image: url('slike/baner4.jpg');">
+        <div class="baner-drzac">
+            <span class="baner-tekst">Galerija</span>
+            <h1 class="baner-naslov"><span> Hotel deLuxe</span></h1>
+        </div>
+    </div>
+
+    <div class="mreza-kartica">
+        <div class="kartica">
+            <img src="slike/soba1.jpg" alt="Dvokrevetna soba Sea View">
+            <h3>Dvokrevetna soba Sea View</h3>
+            <p>Moderno uređena hotelska soba u toplim tonovima ...</p>
+            <button class="dugme" data-soba="1">Prikaži detalje</button>
+        </div>
+
+        <div class="kartica">
+            <img src="slike/soba2.jpeg" alt="Dvokrevetna soba Garden View">
+            <h3>Dvokrevetna soba Garden View</h3>
+            <p>Prostrana, svetla, dvokrevetna hotelska soba ...</p>
+            <button class="dugme" data-soba="2">Prikaži detalje</button>
+        </div>
+
+        <div class="kartica">
+            <img src="slike/soba3.jpg" alt="Trokrevetna soba Side View">
+            <h3>Trokrevetna soba Side View</h3>
+            <p>Ova hotelska soba je prostrana i luksuzna ...</p>
+            <button class="dugme" data-soba="3">Prikaži detalje</button>
+        </div>
+
+        <div class="kartica">
+            <img src="slike/soba4.jpg" alt="Trokrevetna soba Garden View">
+            <h3>Trokrevetna soba Garden View</h3>
+            <p>Luksuzna dvokrevetna hotelska soba sa toplim ...</p>
+            <button class="dugme" data-soba="4">Prikaži detalje</button>
+        </div>
+
+        <div class="kartica">
+            <img src="slike/soba5.webp" alt="Četvorokrevetna soba Sea View">
+            <h3>Četvorokrevetna soba Sea View</h3>
+            <p>Sofisticirana i moderna hotelska soba ...</p>
+            <button class="dugme" data-soba="5">Prikaži detalje</button>
+        </div>
+
+        <div class="kartica">
+            <img src="slike/soba6.jpg" alt="Četvorokrevetna soba Garden View">
+            <h3>Četvorokrevetna soba Garden View</h3>
+            <p>Luksuzna hotelska soba u modernom stilu ...</p>
+            <button class="dugme" data-soba="6">Prikaži detalje</button>
+        </div>
+    </div>
+
+    <!-- Svetlosni prozor -->
+    <div class="svetlosni-prozor">
+        <div class="svetlosni-sadrzaj">
+            <div class="svetlosne-slike"></div>
+            <button class="prethodno-dugme">←</button>
+            <button class="sledece-dugme">→</button>
+            <button class="zatvori-dugme">x</button>
+        </div>
+    </div>
+
+    <footer class="futer">
+        <div class="omotac">
+            <div class="futer-sadrzaj">
+                <div class="futer-drzac">
+                    <ul class="futer-navigacija">
+                        <li class="futer-navigacija-stavka"><span class="futer-navigacija-link">Pratite nas na društvenim mrežama</span></li>
+                    <ul class="futer-drustvene">
+        <li class="futer-drustvene-stavka">
+          <a href="https://www.instagram.com/">
+            <img class="futer-ikonica" src="slike/instagram.svg" alt="Instagram">
+          </a>
+        </li>
+        <li class="futer-drustvene-stavka">
+          <a href="https://www.facebook.com/">
+            <img class="futer-ikonica" src="slike/facebook.svg" alt="Facebook">
+          </a>
+        </li>
+        <li class="futer-drustvene-stavka">
+          <a href="https://twitter.com/">
+            <img class="futer-ikonica" src="slike/twitter.svg" alt="Twitter/X">
+          </a>
+        </li>
+        <li class="futer-drustvene-stavka">
+          <a href="https://www.pinterest.com/">
+            <img class="futer-ikonica" src="slike/pinterest.svg" alt="Pinterest">
+          </a>
+        </li>
+        <li class="futer-drustvene-stavka">
+          <a href="https://mail.google.com/mail/">
+            <img class="futer-ikonica" src="slike/mail.svg" alt="Email">
+          </a>
+        </li>
+      </ul>
+                    <a class="futer-znak" href="kontakt.html">
+                        <img class="futer-znak-slika" src="slike/futer2.png" alt="footer logo">
+                    </a>
+                    <span class="futer-autorska">2025 AK 23, Sva prava zadržana</span>
+                    <ul class="futer-lista">
+                        <li class="futer-lista-stavka"><a class="futer-lista-link" href="#">Uslovi korišćenja</a></li>
+                        <li class="futer-lista-stavka"><a class="futer-lista-link" href="#">Politika privatnosti</a></li>
+                        <li class="futer-lista-stavka"><a class="futer-lista-link" href="#">Politika kolačića</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/galerija.js"></script>
+    <script src="js/meni.js"></script>
+</body>
+</html>
+
+
+

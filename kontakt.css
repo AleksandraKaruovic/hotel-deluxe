@@ -1,0 +1,412 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("font/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("font/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+* { box-sizing: border-box; }
+
+button { cursor: pointer; }
+
+.omotac::before, .zaglavlje .omotac::before, .clanak-red::before,
+.omotac::after, .zaglavlje .omotac::after, .clanak-red::after {
+  content: '';
+  display: block;
+}
+.omotac::after, .zaglavlje .omotac::after, .clanak-red::after { clear: both; }
+
+.omotac {
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.znak { display: block; float: left; }
+.znak:hover { opacity: 0.7; }
+.znak-src { height: 70px; display: block; }
+
+.navigacija { display: block; float: right; margin-top: 10px; }
+
+.zaglavlje { padding: 10px 0; background-color: #ffffff; }
+
+.navigacija-lista { font-size: 0; }
+
+.navigacija-stavka {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 25px;
+}
+
+.navigacija-link {
+  display: block;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 6px 6px 4px;
+  border: 1px solid transparent;
+}
+
+.navigacija-link:hover { opacity: 0.7; }
+
+.navigacija-link-aktivno { border-color: #000; background-color: #fff; }
+
+.futer {
+  background-color: #beb3a1;
+  padding: 50px 0 50px;
+}
+
+.futer-naslov {
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #fff;
+  display: block;
+  margin-bottom: 25px;
+}
+
+.futer-tekst {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #fff;
+  display: block;
+  margin-bottom: 25px;
+}
+
+.futer-sadrzaj { text-align: center; max-width: 800px; margin: 0 auto; }
+.futer-drzac   { text-align: center; max-width: 800px; margin: 0 auto; }
+
+.futer-navigacija { font-size: 0; display: block; margin: 0 auto; }
+
+.futer-navigacija-stavka {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 8px;
+}
+
+.futer-navigacija-link {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #fff;
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.futer-navigacija-link:hover {
+  opacity: 0.7;
+}
+
+.futer-drustvene { font-size: 0; margin-top: 30px; }
+.futer-drustvene-stavka { display: inline-block; vertical-align: top; margin: 0 8px; }
+.futer-ikonica {
+  width: 24px;
+  height: 24px;
+  display: block;
+  filter: brightness(0) saturate(100%) invert(100%);
+  transition: opacity .2s ease;
+}
+.futer-ikonica:hover { opacity: .7; }
+
+.futer-znak { display: block; margin: 30px auto; width: 93px; }
+.futer-znak:hover { opacity: 0.7; }
+.futer-znak-slika { width: 100%; }
+
+.futer-autorska {
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+.futer-lista { font-size: 0; }
+
+.futer-lista-stavka {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 10px;
+  position: relative;
+}
+
+.futer-lista-stavka::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: -1px;
+  width: 1px;
+  height: 16px;
+  background-color: #fff;
+}
+
+.futer-lista-stavka:last-child::after { display: none; }
+
+.futer-lista-link {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #fff;
+  display: block;
+  text-decoration: none;
+}
+
+.futer-lista-link:hover { opacity: 0.7; }
+
+.futer-forma { font-size: 0; margin: 40px auto 55px; max-width: 960px; }
+
+.futer-unos-omotac {
+  width: 28%;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 8px;
+}
+.futer-unos-omotac:last-child { width: 16%; }
+
+.futer-unos {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1;
+  padding: 14px;
+  border: 0;
+  background-color: #fff;
+}
+
+.futer-dugme {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1;
+  padding: 14px;
+  border: 2px solid #fff;
+  background-color: #beb3a1;
+  color: #fff;
+}
+.futer-dugme:hover { opacity: 0.7; }
+
+.baner {
+  position: relative;
+  min-height: 400px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.baner-naslov {
+  font-size: 55px;
+  line-height: 32px;
+  display: block;
+  color: #000;
+  font-weight: 400;
+  font-family: "Brush Script MT", cursive;
+  letter-spacing: 3px;
+}
+
+.baner-tekst {
+  font-size: 26px;
+  line-height: 26px;
+  display: block;
+  color: #000;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.baner-drzac {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: inline-block;
+  padding: 20px 30px;
+}
+.baner-drzac::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 5px solid lightgray;
+  background-color: #ffffff;
+  opacity: 0.68;
+  z-index: -1;
+  border-radius: 4px;
+}
+
+body { font-family: "Montserrat", sans-serif; }
+
+.forma {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px;
+  text-align: center;
+}
+
+.unos {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid rgb(190, 186, 186);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  text-align: center;
+}
+
+input[type=submit] {
+  background-color: #e49c55;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover { background-color: #b87430; }
+
+.kontejner {
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+  float: left;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 2% 16px 10%; 
+}
+
+.mapa {
+  float: right;
+  width: 50%;
+  max-width: 900px;
+  margin: 70px 0 16px 2%; 
+}
+
+.mapa iframe { height: 450px; }
+
+.futer { clear: both; }
+
+
+@media (max-width: 768px) {
+  .kontejner,
+  .mapa {
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 16px 0;
+  }
+  .mapa iframe { height: 350px; }
+}
+
+.navigacija-dugme {
+  background: none;
+  display: block;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 6px 6px 4px;
+  border: 1px solid black;
+}
+
+.navigacija-dugme:hover {
+  opacity: 0.7;
+}
+/* Padajući meni – osnova */
+.padajuci { position: relative; }
+.padajuci .sadrzaj {
+  position: absolute;
+  top: 100%; left: 0;
+  display: none;
+  min-width: 180px;
+  background: #fff;
+  border: 1px solid #ddd;
+  z-index: 9999;
+  padding: 6px 0;
+}
+
+/* Stavke u padajućem*/
+.padajuci .sadrzaj .navigacija-link {
+  display: block;
+  padding: 8px 12px;
+  text-transform: uppercase;   
+  border: 0;                 
+}
+.padajuci .sadrzaj .navigacija-link:hover {
+  background: #f3f3f3;
+  opacity: 1;
+}
+
+/* Otvaranje menija */
+.padajuci .sadrzaj.prikazi { display: block; }
+
+#poruke-greske {
+  margin-top: 12px;
+  padding: 10px 12px;
+  border: 1px solid #cc0000;
+  background: #ffecec;
+  color: #cc0000;
+  border-radius: 6px;
+  display: none;
+}
+#poruke-greske ul { margin-left: 18px; list-style: disc; }
