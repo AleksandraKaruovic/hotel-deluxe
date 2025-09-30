@@ -78,30 +78,31 @@ button {
 .pozadina {
     background-size: cover;
     background-position: center;
-    height: 170vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100svh; /* stabilno na mobilnim */
+    height: auto;     
 }
 
 .forma-kontejner {
     background-color: rgba(255, 255, 255, 0.9);
-    padding: 20px;
     border-radius: 8px;
-    width: 500px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: min(420px, 100%);
+    padding: 16px;
 }
 
 h1 {
     text-align: center;
     color: #000;
-    font-size: 28px;
+    font-size: 24px;
 }
 
 h2 {
     text-align: center;
     color: #000;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 label {
@@ -154,4 +155,7 @@ button[type="submit"]:hover {
   display: none; /* pojavljuje se tek kad ima grešaka */
 }
 #poruke-greske ul { margin-left: 18px; list-style: disc; }
+@media (min-width: 1200px){
+  .forma-kontejner{ width: 400px; }
+}
 
